@@ -1,13 +1,17 @@
 class Spaceship extends Floater {
 public Spaceship ()
 {
-  corners = 3;
-  xCorners = new int []{-8,16,-8};
-  yCorners = new int []{-8,0,8};
+  corners = 4;
+  xCorners = new int []{-8,16,-8,-2};
+  yCorners = new int []{-8,0,8,0};
+  myColor = color (255, 255, 255);
+  myCenterX = 300;
+  myCenterY = 300;
+  myDirectionX = 0;
+  myDirectionY = 0;
+  myPointDirection = 0;
 }
-public void show() {
+public void turn() {
+	
 }
-beginShape();
-Vertex(xCorners[], yCorners[]);
-endShape(mode);
 }
