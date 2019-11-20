@@ -16,10 +16,21 @@ public void draw()
  	jim[i].show();
  }
 	pam.show();
-public void keyPressed()
-{
+	pam.move();
 
 }
-
+public void keyPressed(){
+	if(key == w){
+		pam.accelerate(0.5);
+	}
+	if(key == s){
+		pam.accelerate(-0.5);	}
+	if(key == a){
+		pam.rotate(30);
+	}
+	if(key == d){
+		pam.rotate(-30);
+	}
 }
+
 
