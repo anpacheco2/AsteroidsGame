@@ -11,19 +11,12 @@ public Spaceship ()
   myDirectionY = 0;
   myPointDirection = 0;
 }
-
-public void keyPressed(){
-	if(key == w){
-		pam.accelerate(0.5);
-	}
-	if(key == s){
-		pam.accelerate(-0.5);
-	}
-	if(key == a){
-		pam.rotate(30);
-	}
-	if(key == d){
-		pam.rotate(-30);
-	}
+public void hyperspace(){
+	myCenterX = (int)(Math.random()*700);
+  	myCenterY = (int)(Math.random()*700);
+  	myDirectionX = 0;
+  	myDirectionY = 0;
+  	myPointDirection = (int)(Math.random()*700);
+  	accelerate(0);
 }
 }

@@ -20,16 +20,19 @@ public void draw()
 
 }
 public void keyPressed(){
-	if(key == w){
+	if(key == 'w'){
 		pam.accelerate(0.5);
 	}
-	if(key == s){
+	if(key =='s'){
 		pam.accelerate(-0.5);	}
-	if(key == a){
-		pam.rotate(30);
+	if(key == 'a'){
+		pam.turn(10);
 	}
-	if(key == d){
-		pam.rotate(-30);
+	if(key == 'd'){
+		pam.turn(-10);
+	}
+	if(key == 'h'){
+		pam.hyperspace();
 	}
 }
 
