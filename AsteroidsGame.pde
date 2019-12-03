@@ -1,5 +1,6 @@
 Star[] jim = new Star [250];
 Spaceship pam = new Spaceship ();
+ArrayList <Asteroid> toby = new ArrayList <Asteroid>();
 public void setup() 
 {
  size(600,600);
@@ -17,6 +18,10 @@ public void draw()
  }
 	pam.show();
 	pam.move();
+	for(int x = 0; x < toby.size(); x ++){
+	toby.get(x).show();
+	toby.get(x).move();
+}
 
 }
 public void keyPressed(){
