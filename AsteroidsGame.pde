@@ -20,6 +20,9 @@ public void draw()
  for (int x=0; x<dwight.size();x++){
  	dwight.get(x).show();
  	dwight.get(x).move();
+ 	//float d = dist(pam.getX(), pam.getY(), dwight.get(x).getX(), dwight.get(x).getY());
+ 	//if (d < 10)
+ 		//dwight.remove(x);
  }
 	pam.show();
 	pam.move();
@@ -34,10 +37,10 @@ public void keyPressed(){
 	if(key =='s'){
 		pam.accelerate(-0.5);	}
 	if(key == 'a'){
-		pam.turn(10);
+		pam.turn(-10);
 	}
 	if(key == 'd'){
-		pam.turn(-10);
+		pam.turn(10);
 	}
 	if(key == 'h'){
 		pam.hyperspace();
