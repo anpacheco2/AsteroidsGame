@@ -12,8 +12,8 @@ public Spaceship ()
   myPointDirection = 0;
 }
 public void hyperspace(){
-	myCenterX = (int)(Math.random()*700);
-  	myCenterY = (int)(Math.random()*700);
+	myCenterX = (int)(Math.random()*500);
+  	myCenterY = (int)(Math.random()*500);
   	myDirectionX = 0;
   	myDirectionY = 0;
   	myPointDirection = (int)(Math.random()*700);

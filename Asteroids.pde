@@ -7,8 +7,11 @@ public Asteroid(){
 	myColor = color (250);
 	myCenterX = (int)(Math.random()*400);
     myCenterY = (int)(Math.random()*400);
+    myPointDirection = (int)(Math.random()*10-5);;
+    myDirectionX = 0;
+    myDirectionY = 0;
     rotSpeed  = (int)(Math.random()*10-5);
-    speed  = (int)(Math.random()*4-2);
+    speed  = (int)(Math.random()*8-4);
    
 }
 public void move(){
