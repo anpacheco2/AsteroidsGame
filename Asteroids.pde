@@ -6,12 +6,12 @@ public Asteroid(){
 	yCorners = new int []{-8,0,10,10,0,-8};
 	myColor = color (250);
 	myCenterX = (int)(Math.random()*400);
-    myCenterY = (int)(Math.random()*400);
-    myPointDirection = (int)(Math.random()*10-5);;
-    myDirectionX = 0;
-    myDirectionY = 0;
-    rotSpeed  = (int)(Math.random()*10-5);
-    speed  = (int)(Math.random()*8-4);
+  myCenterY = (int)(Math.random()*400);
+  myPointDirection = (int)(Math.random()*10-5);;
+  myDirectionX = 0;
+  myDirectionY = 0;
+  rotSpeed  = (int)(Math.random()*10-5);
+  speed  = (int)(Math.random()*8-4);
    
 }
 public void move(){
@@ -20,4 +20,9 @@ public void move(){
   myCenterX = myCenterX - speed;
   myCenterY = myCenterY - speed;
 }
+public int getX(){return (int)myCenterX;}
+  public int getY(){return (int)myCenterY;}
+  public int getDirectionY(){return (int)myDirectionY;}
+  public int getDirectionX(){return (int)myDirectionX;}
+  public int getPointDirection(){return (int)myPointDirection;}
 }
